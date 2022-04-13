@@ -13,7 +13,8 @@ public class Cliente {
 		this.saldo -= saldo;
 		
 	}
-	void versaldo(float saldo) {
+	void versaldo(float saldo){
+		System.out.println("Esse é o seu saldo:");
 		System.out.println(saldo);
 		
 	}

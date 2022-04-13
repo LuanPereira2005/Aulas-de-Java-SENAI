@@ -10,20 +10,20 @@ public class VendaTop {
 		double total;
 		int control=0;
 		
-		Scanner entrada= new Scanner(System.in);
+		Scanner Jailso= new Scanner(System.in);
 		
 		System.out.println("Escolha o valor do produto que você quer:");
 		System.out.println("Camisa:1=350");
 		System.out.println("Camiseta:2=300");
 		System.out.println("Calças:3=200");
 		System.out.println("Sapatos:4=150");
-		prod1=Integer.parseInt(entrada.nextLine());
+		prod1=Integer.parseInt(Jailso.nextLine());
 		System.out.println("Escolha o valor do produto que você quer:");
 		System.out.println("Camisa:1=350");
 		System.out.println("Camiseta:2=300");
 		System.out.println("Calças:3=200");
 		System.out.println("Sapatos:4=150");
-		prod2=Integer.parseInt(entrada.nextLine());
+		prod2=Integer.parseInt(Jailso.nextLine());
 	
 		if ((prod1==1) && (prod2==1)) {
 			System.out.println("O valor do primeiro produto é:"+(350));

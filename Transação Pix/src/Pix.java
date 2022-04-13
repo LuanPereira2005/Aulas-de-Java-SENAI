@@ -4,7 +4,7 @@ public class Pix {
 	String chEmail;
 	String chTel;
 	String chAl;
-	
+	float valor;
 	
 	
 		
