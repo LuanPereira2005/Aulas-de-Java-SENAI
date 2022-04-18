@@ -4,17 +4,19 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Alunos aluno1 = new Alunos();
+		Notas notas1=  new Notas();
 		
 		aluno1.nome = "cabeça de gelo";
-		aluno1.nota1= 8.5;
-		aluno1.nota2= 7.5;
-		aluno1.nota3= 6;
-		aluno1.peso1= 3;
-		aluno1.peso2= 2;
-		aluno1.peso3= 5;
+		notas1.nota1 = 8.5;
+		notas1.nota2 = 7.5;
+		notas1.nota3 = 6;
+		notas1.peso1 = 3;
+		notas1.peso2 = 2;
+		notas1.peso3 = 5;
+	
+		aluno1.media(notas1.resul1,notas1.resul2,notas1.resul3,aluno1,notas1);
 		
-		aluno1.cal_média(Alunos);
-		System.out.println(aluno1.resultotal);
+		
 	}
 
 }
