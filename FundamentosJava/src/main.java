@@ -162,17 +162,17 @@ public class main {
 //		for(int x=0; x<11; x+=2) {
 //			System.out.println(x);
 //		}
-		int a=0;
-		
-		Scanner entrada = new Scanner(System.in);
-		
-		System.out.println("Escolha a tabuada");
-		
-		a=Integer.parseInt(entrada.nextLine());
-		
-		for(int b=a; b<a*10.5; b+=a) {
-			System.out.println(b);
-		}
+//		int a=0;
+//		
+//		Scanner entrada = new Scanner(System.in);
+//		
+//		System.out.println("Escolha a tabuada");
+//		
+//		a=Integer.parseInt(entrada.nextLine());
+//		
+//		for(int b=a; b<a*10.5; b+=a) {
+//			System.out.println(b + " x " + a + " = " + b);
+//		}
 		
 //		double z = 0;
 //		double x = 0;
@@ -206,6 +206,9 @@ public class main {
 //			System.out.println(z);
 //			break;
 //		}
+		for(int x=0; x<=1000000000; x+=10) {
+			System.out.println(x);
+		}
 
 	}
 }
