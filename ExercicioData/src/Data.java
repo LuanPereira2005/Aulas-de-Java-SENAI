@@ -27,6 +27,30 @@ public class Data {
 
 	}
 
+	public void setDia(int dia) {
+		this.dia = dia;
+	}
+
+	public void setMes(int mes) {
+		this.mes = mes;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
+	public void setHora(int hora) {
+		this.hora = hora;
+	}
+
+	public void setMin(int min) {
+		this.min = min;
+	}
+
+	public void setSeg(int seg) {
+		this.seg = seg;
+	}
+
 	public String imprimir() {
 
 		return dia + "/" + mes + "/" + ano;
@@ -43,18 +67,34 @@ public class Data {
 
 		if ((Formato == 12) && (AmPm == 1)) {
 
-			hora *= 1;
-			min *= 1;
-			seg *= 1;
+			if (hora <= 12) {
 
-			return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg;
+				return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg + " AM";
+
+			}
+
+			else {
+
+				hora -= 12;
+
+				return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg + " AM";
+
+			}
 
 		} else if ((Formato == 12) && (AmPm == 2)) {
-			
-			hora += 12;
 
-			return dia + "/" + mes + "/" + ano + " " + hora + " da tarde:" + min + ":" + seg;
+			if (hora >= 12) {
 
+				hora -= 12;
+
+				return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg + " PM";
+
+			}
+
+			else {
+
+				return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg + " PM";
+			}
 		}
 
 		return "Você é um trouxa kkkk";

@@ -27,24 +27,12 @@ public class main {
 		System.out.println("Digite o ano");
 
 		ano = Integer.parseInt(entrada.next());
-		
-		System.out.println("Digite a hora");
-
-		hora = Integer.parseInt(entrada.next());
-
-		System.out.println("Digite o minuto");
-
-		min = Integer.parseInt(entrada.next());
-
-		System.out.println("Digite o segundo");
-
-		seg = Integer.parseInt(entrada.next());
 
 		System.out.println("Escolha o formato da data");
 		System.out.println("1-Sem Hora");
 		System.out.println("2-Com Hora");
 
-		Data data1 = new Data(dia, mes, ano, hora, min, seg);
+		Data data1 = new Data(dia, mes, ano, 0, 0, 0);
 
 		data = Integer.parseInt(entrada.next());
 
@@ -54,7 +42,26 @@ public class main {
 
 		} else if (data == 2) {
 
+			System.out.println("Digite a hora");
+
+			hora = Integer.parseInt(entrada.next());
+			
+			data1.setHora(hora);
+
+			System.out.println("Digite o minuto");
+
+			min = Integer.parseInt(entrada.next());
+			
+			data1.setMin(min);
+
+			System.out.println("Digite o segundo");
+
+			seg = Integer.parseInt(entrada.next());
+			
+			data1.setSeg(seg);
+
 			System.out.println("Escolha o formato da hora");
+
 			System.out.println("12 ou 24");
 
 			formato = Integer.parseInt(entrada.next());
@@ -63,28 +70,25 @@ public class main {
 
 				System.out.println(data1.imprimir(formato));
 
-			}else if(formato == 12) {
-				
+			} else if (formato == 12) {
+
 				System.out.println("Escolha se será Am ou Pm");
 				System.out.println("1-Para Am");
 				System.out.println("2-Para Pm");
 
 				AmPm = Integer.parseInt(entrada.next());
-				
-				if(AmPm == 1){
-					
-					System.out.println(data1.imprimir(formato,AmPm));
-					
-				}else if(AmPm == 2){
-					
-					System.out.println(data1.imprimir(formato,AmPm));
-					
+
+				if (AmPm == 1) {
+
+					System.out.println(data1.imprimir(formato, AmPm));
+
+				} else if (AmPm == 2) {
+
+					System.out.println(data1.imprimir(formato, AmPm));
+
 				}
-				
+
 			}
-
-			System.out.println(data1.imprimir());
-
 		}
 
 	}
