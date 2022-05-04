@@ -50,13 +50,8 @@ public class Data {
 			return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg;
 
 		} else if ((Formato == 12) && (AmPm == 2)) {
-
-			if (hora <= 12) {
-				return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg;
-
-			} else if (hora > 12)
-
-				hora -= 12;
+			
+			hora += 12;
 
 			return dia + "/" + mes + "/" + ano + " " + hora + " da tarde:" + min + ":" + seg;
 
