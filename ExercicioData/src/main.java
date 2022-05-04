@@ -57,7 +57,6 @@ public class main {
 			System.out.println("Digite o segundo");
 
 			seg = Integer.parseInt(entrada.next());
-			
 			data1.setSeg(seg);
 
 			System.out.println("Escolha o formato da hora");
