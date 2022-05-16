@@ -3,7 +3,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int menu;
 		
 		Cliente cliente1 = new Cliente();
 		Pix pix1 = new Pix();
@@ -17,9 +16,9 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Escolha o menu");
-		int menu = scanner.next();
+		String menu = scanner.next();
 		
-		if(menu==1)
+		if(menu=="1")
 			
 		cliente1.versaldo(cliente1.saldo);
 				
