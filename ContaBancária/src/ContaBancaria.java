@@ -1,6 +1,7 @@
 
 public abstract class ContaBancaria {
-
+	
+	protected String nome;
 	protected double saldo = 50;
 
 	public void depositar(double x) {

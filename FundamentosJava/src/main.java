@@ -173,7 +173,7 @@ public class main {
 //		for(int b=a; b<a*10.5; b+=a) {
 //			System.out.println(b + " x " + a + " = " + b);
 //		}
-		
+
 //		double z = 0;
 //		double x = 0;
 //		double y = 0;
@@ -206,9 +206,47 @@ public class main {
 //			System.out.println(z);
 //			break;
 //		}
-		for(int x=0; x<=1000000000; x+=10) {
-			System.out.println(x);
-		}
+//		for(int x=0; x<=1000000; x+=1) {
+//			System.out.println(x);
+//		}
+//
+//		int x1 = 3;
+//		int z1 = 5;
+//		int y1 = 7;
+//
+//		System.out.println(x1);
+//		System.out.println(y1);
+//		System.out.println(z1);
+//		System.out.println();
+//
+//		double x[] = { 3, 5, 3, 5 };
+//
+//		for (int aux = 0; aux < x.length; aux++) {
+//			System.out.println("valor do indice " + aux + " = " + x[aux]);
+//		}
+//		String nome[] = { "Luan", "Marquinhos", "Emanuel", "Vitão" };
+//
+//		for (int aux = 0; aux < nome.length; aux++) {
+//			System.out.println(nome[aux]);
+//			if (nome[aux] == "Marquinhos") {
+//				System.out.println("O indice de " + nome[aux] + " é = " + aux);
+//			}
+//		}
+		int[] a = new int[5];
+		String[] b = new String[4];
+		double[] c = new double[3];
 
+		a[3] = 5;
+
+		int[] numero = new int[6];
+		Scanner teclado = new Scanner(System.in);
+
+		for (int aux = 0; aux < numero.length; aux++) {
+			System.out.println("Digite um número qualquer");
+			numero[aux] = teclado.nextInt();
+		}
+		for (int aux = 0; aux < numero.length; aux++) {
+			System.out.println("Indice "+aux+" = " +numero[aux]);
+		}
 	}
 }
