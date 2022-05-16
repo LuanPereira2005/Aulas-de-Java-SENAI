@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
+    //Criação de variavel e atribuição de valores a ela		
 //		int x = 100;
 //		double y = 200;
 //		short z = (short) 32767;
