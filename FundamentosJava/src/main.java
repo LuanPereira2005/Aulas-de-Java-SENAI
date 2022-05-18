@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-    //Criação de variavel e atribuição de valores a ela		
+		// Criação de variavel e atribuição de valores a ela
 //		int x = 100;
 //		double y = 200;
 //		short z = (short) 32767;
@@ -233,21 +233,50 @@ public class main {
 //				System.out.println("O indice de " + nome[aux] + " é = " + aux);
 //			}
 //		}
-		int[] a = new int[5];
-		String[] b = new String[4];
-		double[] c = new double[3];
-
-		a[3] = 5;
-
-		int[] numero = new int[6];
-		Scanner teclado = new Scanner(System.in);
-
-		for (int aux = 0; aux < numero.length; aux++) {
-			System.out.println("Digite um número qualquer");
-			numero[aux] = teclado.nextInt();
-		}
-		for (int aux = 0; aux < numero.length; aux++) {
-			System.out.println("Indice "+aux+" = " +numero[aux]);
+//		int[] a = new int[5];
+//		String[] b = new String[4];
+//		double[] c = new double[3];
+//
+//		a[3] = 5;
+//
+//		int[] numero = new int[6];
+//		Scanner teclado = new Scanner(System.in);
+//
+//		for (int aux = 0; aux < numero.length; aux++) {
+//			System.out.println("Digite um número qualquer");
+//			numero[aux] = teclado.nextInt();
+//		}
+//		for (int aux = 0; aux < numero.length; aux++) {
+//			System.out.println("Indice "+aux+" = " +numero[aux]);
+//		}
+		
+//		int[] arrayQualquer = new int[5];
+//		
+//		Object [] arrayObject = new Object[7];
+//		
+//		arrayObject[0] = "Queijo de pão";
+//		arrayObject[1] = 25;
+//		arrayObject[2] = 'A';
+//		arrayObject[3] = 2554545845455465454.2;
+//		arrayObject[4] = true;
+//		arrayObject[5] = arrayQualquer;
+//		
+//		
+//		for (int aux = 0; aux < arrayObject.length;aux++) {
+//			System.out.println("Indice "+aux+ " = "+arrayObject[aux]);
+//		}
+		
+		int[][] arrayBidirecional = new int[5][3];
+		
+		arrayBidirecional[0][0] = 8;
+		arrayBidirecional[4][1] = 5;
+		
+		for (int linha = 0; linha < arrayBidirecional.length;linha++) {
+			for (int coluna = 0;coluna < arrayBidirecional[0].length;coluna++) {
+				System.out.print("Indice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna]+"    ");
+			}
+		System.out.println();	
+			
 		}
 	}
 }
