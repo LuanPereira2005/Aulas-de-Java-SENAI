@@ -26,7 +26,11 @@ public class Pessoa {
 		this.endereço = endereço;
 	}
 
-	
+	@Override
+	public String toString() {
+		y++;
+		return "Esse é o cadastro da pessoa do número: " + y + " nome:"+ nome + " que tem a idade:"+ idade +" do sexo:" + sexo + " que mora na rua:"+ endereço.rua +" no número:"+ endereço.nº +" no bairro:"+ endereço.bairro;	
+	}
 
 
 	
