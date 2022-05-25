@@ -1,0 +1,3 @@
+Sabonete do indice 1 tem o atributo cheiro=rtghgir e o atributo cor=rthgtrh
+Sabonete do indice 2 tem o atributo cheiro=trghtighitrhg e o atributo cor=trghighitrh
+Sabonete do indice 3 tem o atributo cheiro=trghitrhgitrhg e o atributo cor=trioghtrhgiorh

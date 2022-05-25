@@ -1,4 +1,7 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,7 +10,7 @@ import java.util.Scanner;
 
 public class Aplicacao {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException,FileNotFoundException{
 		
 		Scanner entrada = new Scanner(System.in);
 		
@@ -27,7 +30,22 @@ public class Aplicacao {
 				escrever.write(sabonete.toString());
 			}
 		}
-		;
-	}
+		try (BufferedReader reader = new BufferedReader(new FileReader("Saída.txt"))) {
+			String line;
+			String string = "";
+			
+			List<Sabonete>listaDeSabonetes2 = new ArrayList<Sabonete>();
+			
+			while((line = reader.readLine())!=null) {
+				string+=line + "\n";
+				Sabonete sabonete = new Sabonete(line);
+				listaDeSabonetes2.add(sabonete);
+			}
+	
+		}
+		}
+		
 }
+
+
 

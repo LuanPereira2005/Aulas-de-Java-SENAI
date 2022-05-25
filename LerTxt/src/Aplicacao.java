@@ -1,0 +1,27 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Aplicacao {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+
+		try (BufferedReader reader = new BufferedReader(new FileReader("Entrada.txt"))) {
+			String line;
+			String string = "";
+			
+			while((line = reader.readLine())!=null) {
+				string+=line + "\n";
+			}
+			System.out.println(string);
+		}
+		
+//		Sabonete sabonete1 = new Sabonete("Abacaxi","Amarelo");
+//		String s = sabonete1.toString();
+		String teste = "Sabonete: cheiro=Abacaxi, cor=Amarelo";
+		Sabonete sabonete2 = new Sabonete(teste);
+		System.out.println(sabonete2);
+
+	}
+}
