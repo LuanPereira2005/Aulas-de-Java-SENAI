@@ -3,27 +3,52 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-		// Criação de variavel e atribuição de valores a ela
+		// Criação de variaveis e atribuicao de valores a elas
+		// Variavel do tipo inteiro que aceita apenas numero sem virgula, caso voce
+		// digite um numero decimal, ou seja, um numero com virgula, ele apenas vai
+		// ignorar o que esta apos a virgula.
 //		int x = 100;
+		// Variavel do tipo double que aceita numeros com virgula
 //		double y = 200;
+		// Variavel do tipo short que aceita numero com virgula, porem o numero maximo
+		// aceitado e 32767
 //		short z = (short) 32767;
-//
+
+		// Variavel do tipo int
 //		int a = 0;
+		// Variavel do tipo double
 //		double b = 0;
-//
+
 //		a = (int) z; // Casting explicito//
 //		b = x; // Casting implicito//
-//
+
+		// Utilizacao do metodo System.out.println() que imprime o parametro (que e o
+		// que vai dentro dos paranteses, que nesse caso sao as variaveis b e a)
 //		System.out.println(b);
 //		System.out.println(a);
-//
+
+		// Variavel do tipo int
 //		int idade = 50000000;
 //
+		// Utilização do teste condicional if que em portugues significa se
+		// Nesse caso se a variavel idade menor do que 18, o programa ira imprimir na
+		// tela a frase que foi implementada dentro das chaves{}
 //		if (idade < 18) {
-//			System.out.println("vaza otário!");
-//			System.out.println("cê é burro man, cê só tem " + idade + " anos");
+//			System.out.println("Vaza!");
+//			System.out.println("Você só tem " + idade + " anos");
+		// Alem do uso do teste condicional if, tambem ha o uso do teste condicional
+		// else if que em portugues significa senao se
+		// Nesse caso se a variavel nao for menor do que 18 que e o teste condicional
+		// acima, ele parte pro proximo teste condicional
+		// Que no caso se a variavel idade for menor do que 60 o codigo novamente ira
+		// imprimir na tela a frase que foi implementada dentro das chaves
 //		} else if (idade < 60) {
 //			System.out.println("Pode ficar parcero já que você tem " + idade + " anos");
+		// Outra utilizacao do teste condicional else if, que se idade nao for menor do
+		// que 18 e nao for menor do que 60, ele parte pro proximo teste condicional
+		// O proximo teste condicional e que se variavel idade for menor que 100 o
+		// codigo novamente ira imprimir na tela a frase que foi implementada dentro das
+		// chaves
 //		} else if (idade < 100) {
 //			System.out.println("Cê tem " + idade + "anos");
 //			System.out.println("Volta para o asilo, velhote!");
@@ -249,7 +274,7 @@ public class main {
 //		for (int aux = 0; aux < numero.length; aux++) {
 //			System.out.println("Indice "+aux+" = " +numero[aux]);
 //		}
-		
+
 //		int[] arrayQualquer = new int[5];
 //		
 //		Object [] arrayObject = new Object[7];
@@ -265,18 +290,19 @@ public class main {
 //		for (int aux = 0; aux < arrayObject.length;aux++) {
 //			System.out.println("Indice "+aux+ " = "+arrayObject[aux]);
 //		}
-		
+
 		int[][] arrayBidirecional = new int[5][3];
-		
+
 		arrayBidirecional[0][0] = 8;
 		arrayBidirecional[4][1] = 5;
-		
-		for (int linha = 0; linha < arrayBidirecional.length;linha++) {
-			for (int coluna = 0;coluna < arrayBidirecional[0].length;coluna++) {
-				System.out.print("Indice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna]+"    ");
+
+		for (int linha = 0; linha < arrayBidirecional.length; linha++) {
+			for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) {
+				System.out
+						.print("Indice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna] + "    ");
 			}
-		System.out.println();	
-			
+			System.out.println();
+
 		}
 	}
 }

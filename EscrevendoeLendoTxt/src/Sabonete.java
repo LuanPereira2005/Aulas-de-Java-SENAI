@@ -1,6 +1,5 @@
 
 public class Sabonete {
-	private static int x=0;
 	private String cheiro;
 	private String cor;
 	
@@ -15,6 +14,8 @@ public class Sabonete {
 		
 		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split("=");
 		this.cor = arrayAuxiliar3[1].trim();
+		
+		
 		}
 
 	public String getCheiro() {
@@ -31,8 +32,8 @@ public class Sabonete {
 	}
 	@Override
 	public String toString() {
-		x++;
-		return "Sabonete do indice "+x+ " tem o atributo cheiro=" + cheiro + " e o atributo cor=" + cor+ "\n";
+		;
+		return "Sabonete tem o atributo cheiro=" + cheiro + ", e o atributo cor=" + cor;
 	}
 
 	

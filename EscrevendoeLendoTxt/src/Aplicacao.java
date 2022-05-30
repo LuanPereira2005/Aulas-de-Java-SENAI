@@ -14,8 +14,9 @@ public class Aplicacao {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		List<Sabonete>listaDeSabonetes=new ArrayList<Sabonete>();
-		
+		List<Sabonete>listaDeSabonetes = new ArrayList<Sabonete>();
+		List<Sabonete>listaDeSabonetes2 = new ArrayList<>();
+	
 		for(int x = 0; x<3; x++) {
 			Sabonete sabonete = new Sabonete();
 			System.out.println("Escolha a cor do seu sabonete");
@@ -27,25 +28,28 @@ public class Aplicacao {
 			}
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("Saída.txt"))){
 			for(Sabonete sabonete:listaDeSabonetes) {
-				escrever.write(sabonete.toString());
+				escrever.write(sabonete.toString()+"\n");
 			}
 		}
 		try (BufferedReader reader = new BufferedReader(new FileReader("Saída.txt"))) {
 			String line;
-			String string = "";
-			
-			List<Sabonete>listaDeSabonetes2 = new ArrayList<Sabonete>();
 			
 			while((line = reader.readLine())!=null) {
-				string+=line + "\n";
 				Sabonete sabonete = new Sabonete(line);
 				listaDeSabonetes2.add(sabonete);
 			}
-	
-		}
-		}
+			
 		
+		}
+		for(Sabonete sabonete:listaDeSabonetes2) {
+		System.out.println(sabonete.toString());
+		}
+		}
 }
+
+		
+		
+
 
 
 
