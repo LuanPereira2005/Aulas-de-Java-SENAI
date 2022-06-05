@@ -3,91 +3,123 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-		// Criação de variaveis e atribuicao de valores a elas
-		// Variavel do tipo inteiro que aceita apenas numero sem virgula, caso voce
-		// digite um numero decimal, ou seja, um numero com virgula, ele apenas vai
+		// Criacao da variavel x do tipo inteiro que aceita apenas numero sem virgula,
+		// caso voce digite um numero decimal, ou seja,
+		// um numero com virgula, ele apenas vai
 		// ignorar o que esta apos a virgula.
+		// E a atribuicao do valor 100 a variavel x recem criada
 //		int x = 100;
-		// Variavel do tipo double que aceita numeros com virgula
+		// Criacao da variavel z sendo do tipo double e a atribuicao do valor 200 a ela.
+		// O tipo double difetente do tipo int aceita numeros com virgula
 //		double y = 200;
-		// Variavel do tipo short que aceita numero com virgula, porem o numero maximo
-		// aceitado e 32767
+		// Criacao da variavel z do tipo short que aceita numero
+		// com virgula, porem o numero maximo
+		// aceitado e 32767.
 //		short z = (short) 32767;
 
-		// Variavel do tipo int
+		// Criacao da variavel a sendo do tipo int e a atribuicao do valor 0 a ela.
 //		int a = 0;
-		// Variavel do tipo double
+		// Criacao da variavel b sendo do tipo double e a atribuicao do valor 0 a ela.
 //		double b = 0;
 
 //		a = (int) z; // Casting explicito//
 //		b = x; // Casting implicito//
 
 		// Utilizacao do metodo System.out.println() que imprime o parametro (que e o
-		// que vai dentro dos paranteses, que nesse caso sao as variaveis b e a)
+		// que vai dentro dos paranteses, que nesse caso sao as variaveis b e a).
 //		System.out.println(b);
-//		System.out.prinatln(a);
+//		System.out.println(a);
 
-		// Variavel do tipo int
+		// Criacao da variavel idade sendo do tipo int
 //		int idade = 50000000;
 //
-		// Utilização do teste condicional if que em portugues significa se
+		// Utilização do teste condicional if que em portugues significa se.
 		// Nesse caso se a variavel idade menor do que 18, o programa ira imprimir na
-		// tela a frase que foi implementada dentro das chaves{}
+		// tela a frase que foi implementada dentro dos parenteses e entre aspas("").
 //		if (idade < 18) {
 //			System.out.println("Vaza!");
 //			System.out.println("Você só tem " + idade + " anos");
 		// Alem do uso do teste condicional if, tambem ha o uso do teste condicional
-		// else if que em portugues significa senao se
+		// else if que em portugues significa senao se.
 		// Nesse caso se a variavel nao for menor do que 18 que e o teste condicional
-		// acima, ele parte pro proximo teste condicional
+		// acima, ele parte pro proximo teste condicional.
 		// Que no caso se a variavel idade for menor do que 60 o codigo novamente ira
-		// imprimir na tela a frase que foi implementada dentro das chaves
+		// imprimir na tela a frase que foi implementada dentro dos parenteses e entre
+		// aspas("").
 //		} else if (idade < 60) {
 //			System.out.println("Pode ficar parcero já que você tem " + idade + " anos");
 		// Outra utilizacao do teste condicional else if, que se idade nao for menor do
-		// que 18 e nao for menor do que 60, ele parte pro proximo teste condicional
+		// que 18 e nao for menor do que 60, ele parte pro proximo teste condicional.
 		// O proximo teste condicional e que se variavel idade for menor que 100 o
-		// codigo novamente ira imprimir na tela a frase que foi implementada dentro das
-		// chaves
+		// codigo novamente ira imprimir na tela a frase que foi implementada dentro
+		// dos parenteses e entre aspas("")
 //		} else if (idade < 100) {
 //			System.out.println("Cê tem " + idade + "anos");
 //			System.out.println("Volta para o asilo, velhote!");
+		// Utilizacao do teste condicional else, se nao for o(s) teste(s)
+		// condicional(is)
+		// anteriores, o codigo novamente ira imprimir na tela a frase que foi
+		// implementada
+		// dentro dos parenteses e entre aspas("").
 //		} else {
 //			System.out.println("Caramba cê tem " + idade + " anos");
 //			System.out.println("Sai pra lá, Peter do Ei Nerd kkkkkk");
 //		}
+		// Criacao da variavel "estacao" e atribuicao do valor "Verao a ela".
+//		String estacao = "Verao";
 //		
-//		String estacao = "Verão";
-//
+		// Utilizacao do metodo switch case que em portugues significa escolha caso,
+		// que funciona da seguinte maneira, caso o parametro do metodo switch seja
+		// ao caso ele ira executar os codigos implementados dentro daquele caso
+		// especifico.
+		// Nesse caso o parametro de switch e estacao
 //		switch (estacao) {
 //
+		// e se caso estacao for igual a "Outono" ele ira executar os codigos
+		// implementados
+		// que sao imprimir na tela(System.out.println)a frase "Hora das folhas cairem!"
+		// e o break que serve para parar a execuçao do codigo.
 //		case "Outono":
 //
-//			System.out.println("Hora das folhas caírem!");
+//			System.out.println("Hora das folhas cairem!");
 //
 //			break;
+		// aqui temos outro caso, caso estacao igual a "Verao" ele ira executar os
+		// codigos
+		// implementados que sao imprimir na tela a frase "Calor de 500° vem ai" e o
+		// break
+//		case "Verao":
 //
-//		case "Verão":
-//
-//			System.out.println("Calor de 500° vem aí");
+//			System.out.println("Calor de 500° vem ai");
 //
 //			break;
-//
+		// aqui temos outro caso, caso estacao igual a "Inverno" ele ira executar os
+		// codigos
+		// implementados que sao imprimir na tela a frase "Frio de -500° vem ai" e o
+		// break
 //		case "Inverno":
 //
-//			System.out.println("Frio de -500° vem aí");
+//			System.out.println("Frio de -500° vem ai");
 //
 //			break;
-//
+		// aqui temos outro caso, caso estacao igual a "Primavera" ele ira executar os
+		// codigos
+		// implementados que sao imprimir na tela a frase "Hora das flores nascerem" e o
+		// break
 //		case "Primavera":
 //
 //			System.out.println("Hora das flores nascerem!");
 //
 //			break;
 //		}
-
+		// Criacao da variavel num do tipo int sem atrbuicao de valores
 //			int num;
-//			
+//		
+		// Criacao da variavel entrada sendo do tipo da classe Scanner
+		// que serve pra escanear informacoes digitadas por usuarios e
+		// a atribuicao do endereço de um objeto da classe Scanner criado usando o new
+		// o new e utilizado pra criar uma instancia de uma determinada classe, nesse
+		// caso a classe Scanner.
 //			Scanner entrada = new Scanner(System.in);
 //			
 //			System.out.println("Escreva um numero");
