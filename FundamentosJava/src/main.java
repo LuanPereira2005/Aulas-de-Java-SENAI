@@ -25,7 +25,7 @@ public class main {
 		// Utilizacao do metodo System.out.println() que imprime o parametro (que e o
 		// que vai dentro dos paranteses, que nesse caso sao as variaveis b e a)
 //		System.out.println(b);
-//		System.out.println(a);
+//		System.out.prinatln(a);
 
 		// Variavel do tipo int
 //		int idade = 50000000;
