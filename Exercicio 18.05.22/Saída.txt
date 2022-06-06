@@ -1,0 +1,4 @@
+Esse é o cadastro da pessoa de nome: 2, que tem a idade: 2,do sexo:FEMININO,que mora na rua:2,no número:2,no bairro:2
+Esse é o cadastro da pessoa de nome: 2, que tem a idade: 2,do sexo:FEMININO,que mora na rua:2,no número:2,no bairro:2
+Esse é o cadastro da pessoa de nome: 1, que tem a idade: 1,do sexo:MASCULINO,que mora na rua:1,no número:1,no bairro:1
+Esse é o cadastro da pessoa de nome: 1, que tem a idade: 1,do sexo:MASCULINO,que mora na rua:1,no número:1,no bairro:1
