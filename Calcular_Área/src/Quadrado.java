@@ -1,4 +1,4 @@
-
+// Criacao de uma classe que implementa da interface AreaCalculavel.
 public class Quadrado implements AreaCalculavel{
 
 	@Override
