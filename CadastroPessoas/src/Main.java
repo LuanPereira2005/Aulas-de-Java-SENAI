@@ -65,6 +65,7 @@ public class Main {
 			// Criacao de uma enhanced for da listaDePessoas para salvarmos os dados em um
 			// txt.
 			for (Pessoa pessoa : listaDePessoas) {
+				// O metodo .write serve para salvar ou sobrescrever o toString da classe (nesse caso Pessoa), no .txt.
 				escrever.write(pessoa.toString() + "\n");
 			}
 		}
