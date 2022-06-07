@@ -1,9 +1,11 @@
-
+// Criacao da classe abstrata ContaBancaria.
 public abstract class ContaBancaria {
-	
+
+	// Criacao de atributos da classe.
 	protected String nome;
 	protected double saldo = 50;
 
+	// Metodos padroes a todas as classes herdeiras.
 	public void depositar(double x) {
 		saldo += x;
 		System.out.println("Você depositou R$" + x + " e agora seu saldo é R$" + saldo);
@@ -26,6 +28,9 @@ public abstract class ContaBancaria {
 
 	}
 
+	// Criacao de um metodo abstrato
+	// Um metodo abstrato e um metodo nao implementado na classe abstrata mas que se
+	// encaixa com todas as classes herdeiras.
 	public abstract String calcularSaldo();
 
 }
