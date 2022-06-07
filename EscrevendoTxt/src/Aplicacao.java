@@ -8,9 +8,10 @@ import java.util.Scanner;
 public class Aplicacao {
 
 	public static void main(String[] args) throws IOException {
-		
+		// Criacao de um scanner.
 		Scanner entrada = new Scanner(System.in);
 		
+		// Criacao de uma ArrayList.
 		List<Sabonete>listaDeSabonetes=new ArrayList<Sabonete>();
 		
 		for(int x = 0; x<3; x++) {
