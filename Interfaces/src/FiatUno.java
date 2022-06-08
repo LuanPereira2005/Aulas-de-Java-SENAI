@@ -1,7 +1,7 @@
-
+// Criacao de uma classe que implementa de uma interface
 public class FiatUno implements Automovel{
 	
-	
+	// Sobreposicao e implementacao dos metodos da interface
 	@Override
 	public void virarEsquerda() {
 		System.out.println("A duzentos metros vire à esquerda");
