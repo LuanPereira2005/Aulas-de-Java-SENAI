@@ -1,11 +1,15 @@
-
+// Criacao de uma classe.
 public class Sabonete {
+	// Criacao de atributos.
 	private static int x=0;
 	private String cheiro;
 	private String cor;
 	
+	// Construtores de sabonete.
 	public Sabonete() {
 	}
+	
+	// Gets and Sets.
 	public String getCheiro() {
 		return cheiro;
 	}
@@ -18,6 +22,8 @@ public class Sabonete {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
+	
+	// Sobreposicao do metodo toString().
 	@Override
 	public String toString() {
 		x++;

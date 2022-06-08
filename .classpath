@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CadastroPessoas/src"/>
+	<classpathentry kind="src" path="Calculadora2/src"/>
+	<classpathentry kind="src" path="Calcular_Área/src"/>
+	<classpathentry kind="src" path="Calculo_area/src"/>
+	<classpathentry kind="src" path="ClasseAbstrata/src"/>
+	<classpathentry kind="src" path="ContaBancária/src"/>
+	<classpathentry kind="src" path="DesafioLerEscreverTxt/src"/>
+	<classpathentry kind="src" path="ElementosStaticos/src"/>
+	<classpathentry kind="src" path="Enum/src"/>
+	<classpathentry kind="src" path="EscrevendoeLendoTxt/src"/>
+	<classpathentry kind="src" path="EscrevendoTxt/src"/>
+	<classpathentry kind="src" path="Exercicio 18.05.22/src"/>
+	<classpathentry kind="src" path="Exercicio2 Data/src"/>
+	<classpathentry kind="src" path="ExercicioData/src"/>
+	<classpathentry kind="src" path="ExercicioLampada/src"/>
+	<classpathentry excluding="src/" kind="src" path="FundamentosJava"/>
+	<classpathentry kind="src" path="FundamentosJava/src"/>
+	<classpathentry excluding="src/" kind="src" path="Herança"/>
+	<classpathentry kind="src" path="Herança/src"/>
+	<classpathentry kind="src" path="Interfaces/src"/>
+	<classpathentry kind="src" path="LerTxt/src"/>
+	<classpathentry kind="src" path="List/src"/>
+	<classpathentry kind="src" path="Loja/src"/>
+	<classpathentry kind="src" path="Loja2/src"/>
+	<classpathentry kind="src" path="LojaTop/src"/>
+	<classpathentry kind="src" path="Média_alunos/src"/>
+	<classpathentry kind="src" path="Mod-05__Ex-02/src"/>
+	<classpathentry kind="src" path="Modificador/src"/>
+	<classpathentry kind="src" path="OrientaçãoaObjetos/src"/>
+	<classpathentry kind="src" path="Polimorfismo Bebidas/src"/>
+	<classpathentry kind="src" path="Polimorfismo/src"/>
+	<classpathentry excluding="ExercicioData/src/|src/" kind="src" path="Sobrecarga"/>
+	<classpathentry kind="src" path="Sobrecarga/ExercicioData/src"/>
+	<classpathentry kind="src" path="Sobrecarga/src"/>
+	<classpathentry excluding="src/" kind="src" path="Teste_GH"/>
+	<classpathentry kind="src" path="Teste_GH/src"/>
+	<classpathentry kind="src" path="Transação Pix/src"/>
+	<classpathentry kind="src" path="TrocarLampada/src"/>
+	<classpathentry kind="output" path="CadastroPessoas/bin"/>
+</classpath>

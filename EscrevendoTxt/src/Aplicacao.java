@@ -14,6 +14,7 @@ public class Aplicacao {
 		// Criacao de uma ArrayList.
 		List<Sabonete>listaDeSabonetes=new ArrayList<Sabonete>();
 		
+		// For para repetir o cadastro de sabonetes 3 vezes.
 		for(int x = 0; x<3; x++) {
 			Sabonete sabonete = new Sabonete();
 			System.out.println("Escolha a cor do seu sabonete");
@@ -23,7 +24,9 @@ public class Aplicacao {
 			listaDeSabonetes.add(sabonete);
 			
 			}
+		// Try usado para garantir a seguranca.
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("Saída.txt"))){
+			// Enhanced for usado para salvar todos os item da lista no .txt.
 			for(Sabonete sabonete:listaDeSabonetes) {
 				escrever.write(sabonete.toString());
 			}
