@@ -1,6 +1,7 @@
-
+// Criacao de uma classe
 public class Data {
-
+	
+	// Criacao de atributos
 	private int dia;
 	private int mes;
 	private int ano;
@@ -8,6 +9,7 @@ public class Data {
 	private int min;
 	private int seg;
 
+	// Construtor que recebe dia, mes e ano
 	public Data(int dia, int mes, int ano) {
 
 		this.dia = dia;
@@ -15,7 +17,7 @@ public class Data {
 		this.ano = ano;
 
 	}
-
+	// Construtor completo, que recebe informações de data e horário
 	public Data(int dia, int mes, int ano, int hora, int min, int seg) {
 
 		this.dia = dia;
@@ -26,7 +28,7 @@ public class Data {
 		this.seg = seg;
 
 	}
-
+	//Gets and Sets
 	public void setDia(int dia) {
 		this.dia = dia;
 	}
@@ -50,15 +52,15 @@ public class Data {
 	public void setSeg(int seg) {
 		this.seg = seg;
 	}
-
+	// Imprime a data/hora formatada (de acordo com o formato especificado)
 	public String imprimir() {
 
 		return dia + "/" + mes + "/" + ano;
 
 	}
-
+	
 	public String imprimir(int Formato) {
-
+		
 		return dia + "/" + mes + "/" + ano + " " + hora + ":" + min + ":" + seg;
 
 	}

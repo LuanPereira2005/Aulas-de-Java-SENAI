@@ -4,6 +4,7 @@ public class main {
 
 	public static void main(String[] args) {
 
+		// Criacao de variaveis
 		int data;
 		int formato;
 		int AmPm;
@@ -13,9 +14,11 @@ public class main {
 		int hora;
 		int min;
 		int seg;
-
+		
+		// Criacao de um Scanner
 		Scanner entrada = new Scanner(System.in);
-
+		
+		// Uso do scanner para atribuir valores a atributos
 		System.out.println("Digite o dia");
 
 		dia = Integer.parseInt(entrada.next());
@@ -35,7 +38,7 @@ public class main {
 		Data data1 = new Data(dia, mes, ano, 0, 0, 0);
 
 		data = Integer.parseInt(entrada.next());
-
+		// Teste condicional para saber qual o formato da data que sera mostrada.
 		if (data == 1) {
 
 			System.out.println(data1.imprimir());
@@ -45,13 +48,13 @@ public class main {
 			System.out.println("Digite a hora");
 
 			hora = Integer.parseInt(entrada.next());
-			
+
 			data1.setHora(hora);
 
 			System.out.println("Digite o minuto");
 
 			min = Integer.parseInt(entrada.next());
-			
+
 			data1.setMin(min);
 
 			System.out.println("Digite o segundo");
