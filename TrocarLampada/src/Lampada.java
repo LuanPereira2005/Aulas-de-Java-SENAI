@@ -3,6 +3,7 @@ public class Lampada {
 
 	public static void main(String[] args) {
 		
+		// Imprimir na tela passo a passo pra trocar uma lampada
 		System.out.println("Olá Mundo!, Hello World!, Hallo Welt!");
 		System.out.println("Trocar a lâmpada");
 		System.out.println("Comprar uma nova lâmpada");

@@ -1,6 +1,7 @@
-
+// Criacao de uma classe
 public class Preparador {
-
+	
+	// Metodo da classe
 	public void prepararBebida(Bebida bebida) {
 
 		System.out.println("Preparando a bebida:" + bebida.getNome());

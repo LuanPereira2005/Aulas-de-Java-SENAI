@@ -1,5 +1,6 @@
-
+// Criacao de uma classe
 public class Notas {
+	// Criacao de atributos
 	double nota1;
 	double nota2;
 	double nota3;
@@ -10,6 +11,7 @@ public class Notas {
 	double resul2;
 	double resul3;
 	
+	// Metodo para definir a nota com o peso ja aplicado
 	void peso(double nota1,double nota2,double nota3, double peso1, double peso2, double peso3){
 		
 		resul1=nota1*peso1/10;

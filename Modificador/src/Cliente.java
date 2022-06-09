@@ -1,15 +1,28 @@
 import java.util.Objects;
 
+// Criacao de uma classe
 public class Cliente {
-	
+
+	// Criacao de atributos
+	// O modificador acesso e o que vem antes dos atributos e metodos
+	// Atributos e metodos publicos sao visiveis por qualquer outra classe
+	// Atributos e metodos privados nao sao visiveis a nenhuma classe, a nao ser a
+	// propria classe
+	// Atributos e metodos protected nao sao visiveis a qualquer classe porem se a
+	// classe herda de uma superclasse, ela consegue ver os atributos protected
+	// dessa superclasse
+	// Sao consideradas boas praticas de programacao deixar os atributos private, e
+	// deixar os metodos public  e usar os gets e sets para ver e mudar esses atributos
 	private String nome;
 	private int cpf;
 	private int numConta;
-	
+
+	// Construtor de Cliente
 	public Cliente() {
-		
+
 	}
 
+	// Gets e Sets
 	public String getNome() {
 		return nome;
 	}
@@ -34,17 +47,20 @@ public class Cliente {
 		this.numConta = numConta;
 	}
 
+	// Sobreposicao do toString
 	@Override
 	public String toString() {
 		return "Cliente: \nnome=" + nome + " \ncpf=" + cpf + " \nnumConta=" + numConta;
 	}
 
+	// Sobreposicao do hashCode
 	@Override
 	public int hashCode() {
 		return Objects.hash(cpf, nome, numConta);
 	}
 
 	@Override
+	// Sobreposicao do equals que e o metodo usado para comparacao dos objetos
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -55,10 +71,5 @@ public class Cliente {
 		Cliente other = (Cliente) obj;
 		return cpf == other.cpf && Objects.equals(nome, other.nome) && numConta == other.numConta;
 	}
-
-	
-	
-	
-	
 
 }
