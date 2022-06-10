@@ -16,7 +16,7 @@ public class Aplicacao {
 		escrita.setEscrita(entrada.next());
 		
 	// Try que usado para tentar garantir que nada dara errado e se caso de errado.
-	// ele ira revertera a situacao.
+	// ele ira voltar o programa como estava antes.
 	try(BufferedWriter escrever = new BufferedWriter(new FileWriter("Memes.txt"))){
 		// O metodo .write serve para salvar ou sobrescrever o get da classe (nesse caso Texto), no .txt.
 		escrever.write(escrita.getEscrita());
